@@ -4,10 +4,10 @@
     "slug": "WWIIAircraft_V2",
     "version": "1.0.24",
     "orientation": "portrait",
-    "icon": "./assets/appIcon.png",
+    "icon": "./app/assets/appIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#79B5FD"
     },
@@ -18,22 +18,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mds.wwii-aircraft-modelling"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.malcolmds.WWIIAircraft_V2"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/favicon.png"
     },
     "extra": {
       "eas": {
         "projectId": "aef8141f-24bd-4247-8d0d-3e9a68de04d4"
+      },
+      "bugsnag": {
+        "apiKey": "c901b47bfa3630c51adceb7a7257bf7a"
       }
-    }
+    },
+    "plugins": [
+      "@bugsnag/plugin-expo-eas-sourcemaps"
+    ]
   }
 }

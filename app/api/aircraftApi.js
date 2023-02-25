@@ -39,12 +39,12 @@ export function getBrandAircrafts(manufacturer_id) {
 }
 
 export function getFavourites(favourites) {
-	const querystring = require("querystring");
-	const url =
-		"aircrafts/favourites?" +
-		querystring.stringify({ favourites: JSON.stringify(favourites) });
-	//    //console.log(url)
-	return APIKit.get(url);
+	// const querystring = require("querystring");
+	// const url =
+	// 	"aircrafts/favourites?" +
+	// 	querystring.stringify({ favourites: JSON.stringify(favourites) });
+	// //    //console.log(url)
+	// return APIKit.get(url);
 }
 
 export default {
